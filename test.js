@@ -61,4 +61,32 @@ describe('Arithmetic Functions', function() {
       }, /Cannot divide by zero/);
     });
   });
+
+  
+  /**
+   * Test suite for the squareRoot function.
+   */
+  describe('SquareRoot Function', function() {
+    it('should return 3 when finding the square root of 9', function() {
+      assert.strictEqual(squareRoot(9), 3);
+    });
+  });
+
+  /**
+   * Test suite for the absolute function.
+   */
+  describe('Absolute Function', function() {
+    it('should return 5 when finding the absolute value of -5', function() {
+      assert.strictEqual(absolute(-5), 5);
+    });
+  });
+
+  /**
+   * Test suite for the factorial function.
+   */
+  describe('Factorial Function', function() {
+    it('should return 120 when finding the factorial of 5', function() {
+      assert.strictEqual(factorial(5), 120);
+    });
+  });
 });

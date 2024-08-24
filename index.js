@@ -125,6 +125,39 @@ function zeroFillRightShift(a, b) {
     return a >>> b;
 }
 
+/**
+ * Calculates the square root of a number.
+ *
+ * @param {number} a - The number to find the square root of.
+ * @returns {number} The square root of the number.
+ */
+function squareRoot(a) {
+    return Math.sqrt(a);
+}
+
+/**
+ * Calculates the absolute value of a number.
+ *
+ * @param {number} a - The number to find the absolute value of.
+ * @returns {number} The absolute value of the number.
+ */
+function absolute(a) {
+    return Math.abs(a);
+}
+
+/**
+ * Calculates the factorial of a number.
+ *
+ * @param {number} n - The number to find the factorial of.
+ * @returns {number} The factorial of the number.
+ */
+function factorial(n) {
+    if (n < 0) return -1;
+    else if (n === 0) return 1;
+    else {
+        return (n * factorial(n - 1));
+    }
+}
 module.exports = {
     add,
     subtract,
@@ -138,5 +171,8 @@ module.exports = {
     bitwiseNot,
     leftShift,
     rightShift,
-    zeroFillRightShift
+    zeroFillRightShift,
+    squareRoot,
+    absolute,
+    factorial
 };

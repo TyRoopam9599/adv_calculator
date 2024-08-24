@@ -1,6 +1,6 @@
 # Arithmetic Functions Module
 
-A simple Node.js module providing basic arithmetic functions: addition, subtraction, multiplication, and division. This module is designed for educational purposes to demonstrate how to write and test JavaScript functions.
+A Node.js module providing basic arithmetic functions: addition, subtraction, multiplication, and division. This module is designed for educational purposes to demonstrate how to write and test JavaScript functions.
 
 ## Table of Contents
 
@@ -12,11 +12,27 @@ A simple Node.js module providing basic arithmetic functions: addition, subtract
 
 ## Overview
 
-This module includes the following arithmetic functions:
+This module includes the following functions:
+
+### Arithmetic Functions
 - `add(a, b)`: Returns the sum of `a` and `b`.
 - `subtract(a, b)`: Returns the difference when `b` is subtracted from `a`.
 - `multiply(a, b)`: Returns the product of `a` and `b`.
 - `divide(a, b)`: Returns the quotient when `a` is divided by `b`. Throws an error if `b` is zero.
+- `exponential(base, exponent)`: Returns the result of `base` raised to the power of `exponent`.
+- `modulus(a, b)`: Returns the remainder when `a` is divided by `b`.
+- `squareRoot(a)`: Returns the square root of `a`.
+- `absolute(a)`: Returns the absolute value of `a`.
+- `factorial(n)`: Returns the factorial of `n`.
+
+### Bitwise Functions
+- `bitwiseAnd(a, b)`: Performs a bitwise AND operation on `a` and `b`.
+- `bitwiseOr(a, b)`: Performs a bitwise OR operation on `a` and `b`.
+- `bitwiseXor(a, b)`: Performs a bitwise XOR operation on `a` and `b`.
+- `bitwiseNot(a)`: Performs a bitwise NOT operation on `a`.
+- `leftShift(a, b)`: Performs a left bitwise shift on `a` by `b` bits.
+- `rightShift(a, b)`: Performs a right bitwise shift on `a` by `b` bits.
+- `zeroFillRightShift(a, b)`: Performs a zero-fill right shift on `a` by `b` bits.
 
 ## Installation
 
@@ -47,12 +63,42 @@ To use this module in your project, follow these steps:
 You can use the functions by requiring the module in your Node.js application. Here’s how you can do it:
 
 ```javascript
-const { add, subtract, multiply, divide } = require('./index');
+const { 
+  add, 
+  subtract, 
+  multiply, 
+  divide, 
+  exponential, 
+  modulus, 
+  bitwiseAnd, 
+  bitwiseOr, 
+  bitwiseXor, 
+  bitwiseNot, 
+  leftShift, 
+  rightShift, 
+  zeroFillRightShift, 
+  squareRoot, 
+  absolute, 
+  factorial 
+} = require('./index');
 
 console.log(add(2, 3));         // Output: 5
 console.log(subtract(5, 2));    // Output: 3
 console.log(multiply(2, 3));    // Output: 6
 console.log(divide(6, 2));      // Output: 3
+console.log(modulus(5, 2));     // Output: 1
+console.log(exponential(2, 3)); // Output: 8
+console.log(squareRoot(9));     // Output: 3
+console.log(absolute(-5));      // Output: 5
+console.log(factorial(5));      // Output: 120
+
+console.log(bitwiseAnd(5, 3));  // Output: 1
+console.log(bitwiseOr(5, 3));   // Output: 7
+console.log(bitwiseXor(5, 3));  // Output: 6
+console.log(bitwiseNot(5));     // Output: -6
+console.log(leftShift(5, 1));   // Output: 10
+console.log(rightShift(5, 1));  // Output: 2
+console.log(zeroFillRightShift(5, 1)); // Output: 2
 
 // Handle division by zero
 try {
