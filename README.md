@@ -25,7 +25,7 @@ This module includes the following functions:
 - `absolute(a)`: Returns the absolute value of `a`.
 - `factorial(n)`: Returns the factorial of `n`.
 - `gcd(a, b)`: Returns the greatest common divisor of `a` and `b`.
-- `lcm(a, b)`: Returns the lowest common multipl of `a` and `b`.
+- `lcm(a, b)`: Returns the lowest common multiple of `a` and `b`.
 
 ### Bitwise Functions
 - `bitwiseAnd(a, b)`: Performs a bitwise AND operation on `a` and `b`.
