@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { add, subtract, multiply, divide } = require('./index');
+const { add, subtract, multiply, divide, squareRoot, absolute, factorial, gcd, lcm } = require('./index');
 
 /**
  * Test suite for arithmetic functions.
@@ -87,6 +87,32 @@ describe('Arithmetic Functions', function() {
   describe('Factorial Function', function() {
     it('should return 120 when finding the factorial of 5', function() {
       assert.strictEqual(factorial(5), 120);
+    });
+  });
+
+  /**
+   * Test suite for the gcd function.
+   */
+  describe('GCD Function', function() {
+    it('should return 6 when finding the GCD of 54 and 24', function() {
+      assert.strictEqual(gcd(54, 24), 6);
+    });
+
+    it('should return 1 when finding the GCD of 17 and 13', function() {
+      assert.strictEqual(gcd(17, 13), 1);
+    });
+  });
+
+  /**
+   * Test suite for the lcm function.
+   */
+  describe('LCM Function', function() {
+    it('should return 72 when finding the LCM of 24 and 18', function() {
+      assert.strictEqual(lcm(24, 18), 72);
+    });
+
+    it('should return 221 when finding the LCM of 13 and 17', function() {
+      assert.strictEqual(lcm(13, 17), 221);
     });
   });
 });

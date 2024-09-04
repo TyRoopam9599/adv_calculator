@@ -158,6 +158,33 @@ function factorial(n) {
         return (n * factorial(n - 1));
     }
 }
+
+/**
+ * Calculates the greatest common divisor (GCD) of two numbers.
+ *
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} The GCD of the two numbers.
+ */
+function gcd(a, b) {
+    if (!b) {
+        return a;
+    }
+    return gcd(b, a % b);
+}
+
+
+/**
+ * Calculates the least common multiple (LCM) of two numbers.
+ *
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} The LCM of the two numbers.
+ */
+function lcm(a, b){
+    return Math.abs(a*b) / gcd(a, b) ;
+}
+
 module.exports = {
     add,
     subtract,
@@ -174,5 +201,7 @@ module.exports = {
     zeroFillRightShift,
     squareRoot,
     absolute,
-    factorial
+    factorial,
+    lcm,
+    gcd
 };

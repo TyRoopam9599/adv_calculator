@@ -24,6 +24,8 @@ This module includes the following functions:
 - `squareRoot(a)`: Returns the square root of `a`.
 - `absolute(a)`: Returns the absolute value of `a`.
 - `factorial(n)`: Returns the factorial of `n`.
+- `gcd(a, b)`: Returns the greatest common divisor of `a` and `b`.
+- `lcm(a, b)`: Returns the lowest common multipl of `a` and `b`.
 
 ### Bitwise Functions
 - `bitwiseAnd(a, b)`: Performs a bitwise AND operation on `a` and `b`.
@@ -79,7 +81,9 @@ const {
   zeroFillRightShift, 
   squareRoot, 
   absolute, 
-  factorial 
+  factorial,
+  gcd,
+  lcm
 } = require('./index');
 
 console.log(add(2, 3));         // Output: 5
@@ -91,6 +95,8 @@ console.log(exponential(2, 3)); // Output: 8
 console.log(squareRoot(9));     // Output: 3
 console.log(absolute(-5));      // Output: 5
 console.log(factorial(5));      // Output: 120
+console.log(gcd(5,2)) ;         // Output: 1
+condole.log(lcm(5,2)) ;         // Output: 10
 
 console.log(bitwiseAnd(5, 3));  // Output: 1
 console.log(bitwiseOr(5, 3));   // Output: 7
