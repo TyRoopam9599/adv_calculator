@@ -26,6 +26,11 @@ This module includes the following functions:
 - `factorial(n)`: Returns the factorial of `n`.
 - `gcd(a, b)`: Returns the greatest common divisor of `a` and `b`.
 - `lcm(a, b)`: Returns the lowest common multiple of `a` and `b`.
+- `cubeRoot(a)`: Returns the cube root of `a`.
+- `logarithm(a)`: Returns the natural logarithm of `a`.
+- `sine(angle)`: Returns the sine of the angle (in radians).
+- `cosine(angle)`: Returns the cosine of the angle (in radians).
+- `tangent(angle)`: Returns the tangent of the angle (in radians).
 
 ### Bitwise Functions
 - `bitwiseAnd(a, b)`: Performs a bitwise AND operation on `a` and `b`.

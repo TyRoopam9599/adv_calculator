@@ -1,5 +1,20 @@
 const assert = require('assert');
-const { add, subtract, multiply, divide, squareRoot, absolute, factorial, gcd, lcm } = require('./index');
+const { 
+  add, 
+  subtract, 
+  multiply, 
+  divide, 
+  squareRoot, 
+  absolute, 
+  factorial, 
+  gcd, 
+  lcm, 
+  cubeRoot, 
+  logarithm, 
+  sine, 
+  cosine, 
+  tangent 
+} = require('./index');
 
 /**
  * Test suite for arithmetic functions.
@@ -62,7 +77,6 @@ describe('Arithmetic Functions', function() {
     });
   });
 
-  
   /**
    * Test suite for the squareRoot function.
    */
@@ -113,6 +127,51 @@ describe('Arithmetic Functions', function() {
 
     it('should return 221 when finding the LCM of 13 and 17', function() {
       assert.strictEqual(lcm(13, 17), 221);
+    });
+  });
+
+  /**
+   * Test suite for the cubeRoot function.
+   */
+  describe('Cube Root Function', function() {
+    it('should return 3 when finding the cube root of 27', function() {
+      assert.strictEqual(cubeRoot(27), 3);
+    });
+  });
+
+  /**
+   * Test suite for the logarithm function.
+   */
+  describe('Logarithm Function', function() {
+    it('should return 1 when finding the natural logarithm of e', function() {
+      assert.strictEqual(logarithm(Math.E), 1);
+    });
+  });
+
+  /**
+   * Test suite for the sine function.
+   */
+  describe('Sine Function', function() {
+    it('should return 0 when finding the sine of 0 radians', function() {
+      assert.strictEqual(sine(0), 0);
+    });
+  });
+
+  /**
+   * Test suite for the cosine function.
+   */
+  describe('Cosine Function', function() {
+    it('should return 1 when finding the cosine of 0 radians', function() {
+      assert.strictEqual(cosine(0), 1);
+    });
+  });
+
+  /**
+   * Test suite for the tangent function.
+   */
+  describe('Tangent Function', function() {
+    it('should return 0 when finding the tangent of 0 radians', function() {
+      assert.strictEqual(tangent(0), 0);
     });
   });
 });

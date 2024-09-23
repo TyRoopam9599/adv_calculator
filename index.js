@@ -185,6 +185,58 @@ function lcm(a, b){
     return Math.abs(a*b) / gcd(a, b) ;
 }
 
+
+/**
+ * Calculates the cube root of a number.
+ *
+ * @param {number} a - The number to find the cube root of.
+ * @returns {number} The cube root of the number.
+ */
+function cubeRoot(a) {
+    return Math.cbrt(a);
+}
+
+/**
+ * Calculates the natural logarithm (base e) of a number.
+ *
+ * @param {number} a - The number to find the logarithm of.
+ * @returns {number} The natural logarithm of the number.
+ */
+function logarithm(a) {
+    return Math.log(a);
+}
+
+/**
+ * Calculates the sine of an angle (in radians).
+ *
+ * @param {number} angle - The angle in radians.
+ * @returns {number} The sine of the angle.
+ */
+function sine(angle) {
+    return Math.sin(angle);
+}
+
+/**
+ * Calculates the cosine of an angle (in radians).
+ *
+ * @param {number} angle - The angle in radians.
+ * @returns {number} The cosine of the angle.
+ */
+function cosine(angle) {
+    return Math.cos(angle);
+}
+
+/**
+ * Calculates the tangent of an angle (in radians).
+ *
+ * @param {number} angle - The angle in radians.
+ * @returns {number} The tangent of the angle.
+ */
+function tangent(angle) {
+    return Math.tan(angle);
+}
+
+
 module.exports = {
     add,
     subtract,
@@ -203,5 +255,10 @@ module.exports = {
     absolute,
     factorial,
     lcm,
-    gcd
+    gcd,
+    cubeRoot,
+    logarithm,
+    sine,
+    cosine,
+    tangent
 };
