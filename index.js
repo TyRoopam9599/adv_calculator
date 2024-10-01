@@ -236,6 +236,66 @@ function tangent(angle) {
     return Math.tan(angle);
 }
 
+/**
+ * Calculates the hyperbolic sine of a number.
+ *
+ * @param {number} x - The number to find the hyperbolic sine of.
+ * @returns {number} The hyperbolic sine of the number.
+ */
+function sinh(x) {
+    return Math.sinh(x);
+}
+
+/**
+ * Calculates the hyperbolic cosine of a number.
+ *
+ * @param {number} x - The number to find the hyperbolic cosine of.
+ * @returns {number} The hyperbolic cosine of the number.
+ */
+function cosh(x) {
+    return Math.cosh(x);
+}
+
+/**
+ * Calculates the hyperbolic tangent of a number.
+ *
+ * @param {number} x - The number to find the hyperbolic tangent of.
+ * @returns {number} The hyperbolic tangent of the number.
+ */
+function tanh(x) {
+    return Math.tanh(x);
+}
+
+/**
+ * Calculates the arcsine of a number.
+ *
+ * @param {number} x - The number to find the arcsine of.
+ * @returns {number} The arcsine of the number.
+ */
+function asin(x) {
+    return Math.asin(x);
+}
+
+/**
+ * Calculates the arccosine of a number.
+ *
+ * @param {number} x - The number to find the arccosine of.
+ * @returns {number} The arccosine of the number.
+ */
+function acos(x) {
+    return Math.acos(x);
+}
+
+/**
+ * Calculates the arctangent of a number.
+ *
+ * @param {number} x - The number to find the arctangent of.
+ * @returns {number} The arctangent of the number.
+ */
+function atan(x) {
+    return Math.atan(x);
+}
+
 
 module.exports = {
     add,
@@ -260,5 +320,11 @@ module.exports = {
     logarithm,
     sine,
     cosine,
-    tangent
+    tangent,
+    sinh,
+    cosh,
+    tanh,
+    asin,
+    acos,
+    atan
 };

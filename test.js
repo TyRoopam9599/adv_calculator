@@ -13,7 +13,13 @@ const {
   logarithm, 
   sine, 
   cosine, 
-  tangent 
+  tangent,
+  sinh,
+  cosh,
+  tanh,
+  asin,
+  acos,
+  atan
 } = require('./index');
 
 /**
@@ -172,6 +178,84 @@ describe('Arithmetic Functions', function() {
   describe('Tangent Function', function() {
     it('should return 0 when finding the tangent of 0 radians', function() {
       assert.strictEqual(tangent(0), 0);
+    });
+  });
+
+  /**
+   * Test suite for the hyperbolic sine function.
+   */
+  describe('Hyperbolic Sine Function', function() {
+    it('should return 0 when finding the hyperbolic sine of 0', function() {
+        assert.strictEqual(sinh(0), 0);
+    });
+
+    it('should return approximately 1.1752011936438014 when finding the hyperbolic sine of 1', function() {
+        assert.strictEqual(sinh(1), 1.1752011936438014);
+    });
+  });
+
+  /**
+  * Test suite for the hyperbolic cosine function.
+  */
+  describe('Hyperbolic Cosine Function', function() {
+    it('should return 1 when finding the hyperbolic cosine of 0', function() {
+        assert.strictEqual(cosh(0), 1);
+    });
+
+    it('should return approximately 1.5430806348152437 when finding the hyperbolic cosine of 1', function() {
+        assert.strictEqual(cosh(1), 1.5430806348152437);
+    });
+  });
+
+  /**
+  * Test suite for the hyperbolic tangent function.
+  */
+  describe('Hyperbolic Tangent Function', function() {
+    it('should return 0 when finding the hyperbolic tangent of 0', function() {
+        assert.strictEqual(tanh(0), 0);
+    });
+
+    it('should return approximately 0.7615941559557649 when finding the hyperbolic tangent of 1', function() {
+        assert.strictEqual(tanh(1), 0.7615941559557649);
+    });
+  });
+
+  /**
+  * Test suite for the arcsine function.
+  */
+  describe('Arcsine Function', function() {
+    it('should return 0 when finding the arcsine of 0', function() {
+        assert.strictEqual(asin(0), 0);
+    });
+
+    it('should return approximately 1.5707963267948966 (π/2) when finding the arcsine of 1', function() {
+        assert.strictEqual(asin(1), Math.PI / 2);
+    });
+  });
+
+  /**
+  * Test suite for the arccosine function.
+  */
+  describe('Arccosine Function', function() {
+    it('should return π/2 when finding the arccosine of 0', function() {
+        assert.strictEqual(acos(0), Math.PI / 2);
+    });
+
+    it('should return 0 when finding the arccosine of 1', function() {
+        assert.strictEqual(acos(1), 0);
+    });
+  });
+
+  /**
+  * Test suite for the arctangent function.
+  */
+  describe('Arctangent Function', function() {
+    it('should return 0 when finding the arctangent of 0', function() {
+        assert.strictEqual(atan(0), 0);
+    });
+
+    it('should return approximately 0.7853981633974483 (π/4) when finding the arctangent of 1', function() {
+        assert.strictEqual(atan(1), Math.PI / 4);
     });
   });
 });
